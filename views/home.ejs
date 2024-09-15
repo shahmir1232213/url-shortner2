@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/home.css">
+</head>
+<body>
+    <div id="head">
+    <h1>URL Shortner</h1>
+    <form action="/url/post" method="POST">
+        <label>Enter URL</label>
+        <input type="text" name="url" placeholder="www.example.com">
+        <button>Submit</button>
+    </div>    
+        <div>
+            <% if (locals.shortID) { %>
+                <p>Current Short ID: <a href="http://localhost:1000/url/<%=shortID%>" target="blank"><%=shortID%></a></p>
+                <table>
+                    <thead>
+                        <th>SN0</th>
+                        <th>Short ID</th>
+                        <th>Redirect URL</th>
+                        <th>Clicks</th>
+                    </thead>
+                    <tbody>
+                       <% urls.forEach((url,index)=> { %>
+                        <tr>
+                            <td><%= index + 1 %></td>
+                            <td><a href="<%= url.redirectURL %>" target="_blank"><%= url.shortID %></a></td>
+                            <td><%=url.redirectURL %></td>
+                            <td><%= url.click %></td>
+                        </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+            
+            <% } %>    
+        </div>
+    </form>
+    
+</body>
+</html>

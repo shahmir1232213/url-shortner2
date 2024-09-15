@@ -1,0 +1,167 @@
+/* General resets and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(160, 64, 0);
+    color: #ffffff;
+    line-height: 1.8;
+}
+a {
+    text-decoration: none;
+    color: #f6d13b;
+
+}
+
+#head {
+    max-width: 600px; /* Adjust width as needed */
+    margin: 30px auto; /* Center horizontally */
+    padding: 20px;
+    background: #fff; /* Background color for the #head container */
+    border-radius: 8px; /* Optional: Rounded corners */
+    text-align: center; /* Center the text and elements inside */
+}
+
+#head h1 {
+    margin-bottom: 20px; /* Space between the heading and the form */
+    color: #E67E22;
+}
+
+#head form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#head label {
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+#head input[type="text"] {
+    width: 100%;
+    max-width: 400px; /* Limit the width of the input field */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Space between input and button */
+}
+
+#head button {
+    padding: 10px 20px;
+    background: rgb(233, 101, 13);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#head button:hover {
+    background: #E67E22;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    margin: 30px auto;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.form-wrap {
+    background: #fff;
+    padding: 15px 25px;
+    color: black;
+}
+
+.form-wrap h1,
+.form-wrap p {
+    text-align: center;
+}
+
+.form-wrap .form-group {
+    margin-top: 15px;
+}
+
+.form-wrap .form-group label {
+    display: block;
+    color: black;
+}
+
+.form-wrap .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-wrap button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background: rgb(233, 101, 13);
+    color: black;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.form-wrap button:hover {
+    background: #E67E22;
+}
+
+.form-wrap .bottom-text {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer a {
+    color: #E67E22;
+}
+
+/* Styling the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    word-wrap: break-word;
+    color: black; /* Ensure all table text is black */
+}
+
+thead {
+    background-color: #E67E22;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f6d13b; /* Color 1 for odd rows */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fe8d2a; /* Color 2 for even rows */
+}
+
+/* Link styling inside table - keeping links colored differently */
+table a {
+    color:  rgb(160, 64, 0);
+    font-weight: bolder; /* Set the color of the links */
+}
